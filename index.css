@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header {
+  font-size: 2.5rem;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: lightgray;
+}
+
+li {
+  text-decoration: none;
+}
+
+.landing * {
+  z-index: 0;
+}
+
+.landing .navbar {
+  z-index: 1;
+}
+
+.landing {
+  background: url(./image/backgroundtest.jpg) no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer {
+  height: 3vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+}
+h2 {
+  margin-top: 2vh;
+}
+h3 {
+  margin-top: 10px;
+}
+.btn-black {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 15px;
+  color: white;
+}
+
+/* TEST för vit box med info och knapp*/
+#landing-info {
+  margin: auto;
+  background: rgba(255, 255, 255, 0.65);
+  height: 20vh;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 1px 21px 16px rgba(0, 0, 0, 1);
+}
+
+/* SIDA 2 med hjältarna och fetch här kommer det mesta krutet ligga. Även om Jon sa att det inte var vad han hade tänkt. Men jag ser inte hur jag ska ha fetch på båda sidorna. I detta fallet är det bara opraktiskt.*/
+#flex-hero {
+  display: flex;
+  flex-direction: row;
+}
+
+#hero-picture {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+#hero-name {
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+#hero-desc {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 30vw;
+}
+
+/* STÖKIGASTE CSSen jag har skrivit, fixar eventuellt till detta, eller så skapar jag en ny css för undersidan. */
+
+#hero-abilities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: black;
+}
+
+.ability-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  padding-top: 2rem;
+}
+
+.ability-img {
+  display: flex;
+}
+
+.ability-desc {
+  width: 200px;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+#hero-selection {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-gap: 2rem;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.point {
+  cursor: pointer;
+}
+
+h2 {
+  color: white;
+}
+
+#black {
+  color: black;
+}
